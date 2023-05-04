@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Reggeditt/react-capstone/static/css/main.75468ab6.css",
-    "main.js": "/Reggeditt/react-capstone/static/js/main.b0bc5f0c.js",
-    "index.html": "/Reggeditt/react-capstone/index.html",
-    "main.75468ab6.css.map": "/Reggeditt/react-capstone/static/css/main.75468ab6.css.map",
-    "main.b0bc5f0c.js.map": "/Reggeditt/react-capstone/static/js/main.b0bc5f0c.js.map"
+    "main.css": "/react-capstone/static/css/main.75468ab6.css",
+    "main.js": "/react-capstone/static/js/main.b0bc5f0c.js",
+    "index.html": "/react-capstone/index.html",
+    "main.75468ab6.css.map": "/react-capstone/static/css/main.75468ab6.css.map",
+    "main.b0bc5f0c.js.map": "/react-capstone/static/js/main.b0bc5f0c.js.map"
   },
   "entrypoints": [
     "static/css/main.75468ab6.css",
