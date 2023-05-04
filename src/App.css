@@ -1,38 +1,70 @@
 .App {
   text-align: center;
+  background: #e84e93;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.continent-cards-wrap {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;  
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.continent-cards-wrap a {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.continent-card:nth-child(even) {
+  background: linear-gradient(rgba(0, 0, 0, 0.946), rgba(0, 0, 0, 0.763));
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.continent-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 30%;
+  max-width: 20rem;
+  height: 20rem;
+  border: 1px solid lightgrey;
+  backdrop-filter: blur(65px);
+  border-radius: 10px;
+  color: white;
+}
+
+.continent-card a {
+  width: 60%;
+  margin: 0 auto;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: black;
+}
+
+.continent-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  backdrop-filter: blur(25px);
+}
+
+.details-wrap > * {
+  display: flex;
+  gap: 10rem;
+  color: white;
+  padding-inline-end: 10rem;
+}
+
+.details-wrap > *:nth-child(even) {
+  background: linear-gradient(rgba(0, 0, 0, 0.946), rgba(0, 0, 0, 0.763));
+}
+
+.details-wrap * {
+  text-align: left;
+}
+
+.back-arrow {
+  width: 50px;
+  cursor: pointer;
 }

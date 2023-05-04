@@ -49,10 +49,10 @@ const HomePage = () => {
   }, [dispatch]);
   return (
     <div>
-      <div className="continent-card">
+      <div className="continent-cards-wrap">
         {
           continents.map((continent) => (
-            <div key={continent.continent}>
+            <Link to={`/details/${continent.continent}`} key={continent.continent} className="continent-card">
               <h1>{continent.continent}</h1>
               <span>
                 population:
@@ -67,7 +67,7 @@ const HomePage = () => {
                 }
               </span>
               <Link to={`/details/${continent.continent}`}>See more</Link>
-            </div>
+            </Link>
           ))
         }
       </div>
