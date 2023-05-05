@@ -116,6 +116,8 @@ If you like this project please consider leaving a review.
 
 I would like to thank microverse inc for this awesome challeng. Also, my learning partner for all his help and contributions to the completion of the project.
 
+Also, many thanks to [Nelson Sakwa](http://dribbble.com/nelsonbreeza) for the awesome design.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
