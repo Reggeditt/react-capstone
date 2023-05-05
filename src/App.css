@@ -5,7 +5,7 @@
 
 .continent-cards-wrap {
   display: flex;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
   gap: 1rem;
   padding: 2rem;
 }
@@ -13,10 +13,6 @@
 .continent-cards-wrap a {
   text-decoration: none;
   color: white;
-}
-
-.continent-card:nth-child(even) {
-  background: linear-gradient(rgba(0, 0, 0, 0.946), rgba(0, 0, 0, 0.763));
 }
 
 .continent-card {
@@ -43,10 +39,18 @@
   background-color: black;
 }
 
+.continent-card:nth-child(even) {
+  background: linear-gradient(rgba(0, 0, 0, 0.946), rgba(0, 0, 0, 0.763));
+}
+
 .continent-card:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease-in-out;
   backdrop-filter: blur(25px);
+}
+
+.details-wrap * {
+  text-align: left;
 }
 
 .details-wrap > * {
@@ -58,10 +62,6 @@
 
 .details-wrap > *:nth-child(even) {
   background: linear-gradient(rgba(0, 0, 0, 0.946), rgba(0, 0, 0, 0.763));
-}
-
-.details-wrap * {
-  text-align: left;
 }
 
 .back-arrow {

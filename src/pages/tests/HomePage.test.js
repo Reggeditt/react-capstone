@@ -4,7 +4,6 @@ import { render } from '@testing-library/react';
 import { configureStore } from '@reduxjs/toolkit';
 import { MemoryRouter } from 'react-router-dom';
 import { expect } from '@jest/globals';
-import { toBeInTheDocument } from '@testing-library/jest-dom';
 import HomePage from '../HomePage';
 import dataReducer from '../../redux/data/dataSlice';
 
