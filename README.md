@@ -51,6 +51,10 @@ React
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 💻 Video Presentation <a name="walk-through-video"></a>
+
+[Click](https://www.loom.com/share/2101666f3fb8443cb5f5b40d073f648b) to watch a video presentation on the project
+
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
