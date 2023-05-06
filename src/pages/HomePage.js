@@ -48,30 +48,37 @@ const HomePage = () => {
     dispatch(fetchData());
   }, [dispatch]);
   return (
-    <div>
+    <>
       <div className="continent-cards-wrap">
-        {
-          continents.map((continent) => (
-            <Link to={`/details/${continent.continent}`} key={continent.continent} className="continent-card">
-              <h1>{continent.continent}</h1>
-              <span>
-                population:
-                {
-                  continent.countries.reduce((total, country) => total + country.population, 0)
-                }
-              </span>
-              <span>
-                total Area:
-                {
-                  continent.countries.reduce((total, country) => total + country.area, 0)
-                }
-              </span>
-              <Link to={`/details/${continent.continent}`}>See more</Link>
-            </Link>
-          ))
-        }
+        <div className="banner">
+          <h1>Continents</h1>
+          <p>Click on a continent to see details about their populations and Land mass</p>
+        </div>
+        <p className="divider">Stats by continent</p>
+        <div className="continent-cards">
+          {
+            continents.map((continent) => (
+              <Link to={`/details/${continent.continent}`} key={continent.continent} className="continent-card">
+                <h1>{continent.continent}</h1>
+                <span>
+                  population:
+                  {
+                    continent.countries.reduce((total, country) => total + country.population, 0)
+                  }
+                </span>
+                <span>
+                  total Area:
+                  {
+                    continent.countries.reduce((total, country) => total + country.area, 0)
+                  }
+                </span>
+                <Link to={`/details/${continent.continent}`}>See more</Link>
+              </Link>
+            ))
+          }
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

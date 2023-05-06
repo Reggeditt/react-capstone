@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
 .App {
   text-align: center;
   background: #e84e93;
@@ -5,9 +12,36 @@
 
 .continent-cards-wrap {
   display: flex;
+  flex-direction: column;
+}
+
+.continent-cards-wrap .banner {
+  background: linear-gradient(rgba(253, 151, 227, 0.705), rgba(255, 192, 203, 0.603)), url('https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y29udGluZW50c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.continent-cards-wrap .divider {
+  width: 100%;
+  height: 1.5rem;
+  padding-block: 2px;
+  background-color: #df4783;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.continent-cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 220px 220px 220px 220px;
   flex-wrap: wrap;
-  gap: 1rem;
-  padding: 2rem;
 }
 
 .continent-cards-wrap a {
@@ -19,12 +53,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 30%;
-  max-width: 20rem;
-  height: 20rem;
-  border: 1px solid lightgrey;
   backdrop-filter: blur(65px);
-  border-radius: 10px;
   color: white;
 }
 
@@ -49,20 +78,50 @@
   backdrop-filter: blur(25px);
 }
 
-.details-wrap * {
-  text-align: left;
-}
-
-.details-wrap > * {
+.details-wrap {
   display: flex;
-  gap: 10rem;
-  color: white;
-  padding-inline-end: 10rem;
+  flex-direction: column;
 }
 
-.details-wrap > *:nth-child(even) {
-  background: linear-gradient(rgba(0, 0, 0, 0.946), rgba(0, 0, 0, 0.763));
+.details-wrap .banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.details-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-card {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.detail-card img {
+  width: 150px;
+  height: 100px;
+}
+  
+.detail-card div {
+  text-align: left;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+table {
+  width: 100%;
+}
+
+/* .details-cards > *:nth-child(even) {
+  background: linear-gradient(rgba(0, 0, 0, 0.946), rgba(0, 0, 0, 0.763));
+} */
 
 .back-arrow {
   width: 50px;
