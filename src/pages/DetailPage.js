@@ -8,6 +8,10 @@ const DetailPage = () => {
 
   return (
     <div className="details-wrap">
+      <Link to="/">
+        {'<'}
+        back to continents
+      </Link>
       <div className="banner">
         <h1>{ continent }</h1>
         <p>
@@ -15,14 +19,6 @@ const DetailPage = () => {
         </p>
       </div>
       <p className="divider">Stats by countries</p>
-      <Link to="/">
-        <img
-          className="back-arrow"
-          src="https://www.svgrepo.com/show/416236/arrow-back-basic.svg"
-          alt="back arrow"
-        />
-        back to continents
-      </Link>
       <div className="detail-cards">
         {
           countriesData.filter((country) => country.continents[0] === continent).map((country) => (
@@ -51,11 +47,7 @@ const DetailPage = () => {
         }
       </div>
       <Link to="/">
-        <img
-          className="back-arrow"
-          src="https://www.svgrepo.com/show/416236/arrow-back-basic.svg"
-          alt="back arrow"
-        />
+        {'<'}
         back to continents
       </Link>
     </div>
