@@ -1,10 +1,17 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
-export const fetchData = createAsyncThunk('data/fetchData', async (_, thunkAPI) => {
-  const response = await fetch('https://restcountries.com/v3.1/all');
-  const data = await response.json();
+export const fetchTvShows = createAsyncThunk('data/fetchData', async (_, thunkAPI) => {
+  const promises = [];
+  for (let showId = 1; showId < 15; showId += 1) {
+    promises.push(
+      fetch(`https://api.tvmaze.com/shows/${showId}`)
+        .then((response) => response.json()),
+    );
+  }
+
   let { stateData } = thunkAPI.getState();
-  stateData = data;
+  const result = await Promise.all(promises);
+  stateData = result;
   return stateData;
 });
 
@@ -13,7 +20,7 @@ const dataSlice = createSlice({
   initialState: [],
   reducers: {},
   extraReducers: {
-    [fetchData.fulfilled]: (state, action) => {
+    [fetchTvShows.fulfilled]: (state, action) => {
       let { data } = state;
       data = action.payload;
       return data;
