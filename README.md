@@ -53,7 +53,7 @@ React
 
 ## 💻 Video Presentation <a name="walk-through-video"></a>
 
-[Click](https://www.loom.com/share/2101666f3fb8443cb5f5b40d073f648b) to watch a video presentation on the project
+[Click](https://www.loom.com/share/94913ca4b1cf424ca78d47f0a95d21e1?sid=e405b6a8-8ce7-4759-be74-3d211caa33ab) to watch a video presentation on the project
 
 ## 💻 Getting Started <a name="getting-started"></a>
 

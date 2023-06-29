@@ -85,7 +85,7 @@ const DetailPage = () => {
             </Grid>
           )) : <div>Details not found</div>
         }
-        <Card title="Related Movies" style={{ width: '100%', backgroundColor: 'black', color: 'white' }}>
+        <Card title="Related Movies" style={{ width: '100%', backgroundColor: 'black', color: 'white' }} className="scrollbar-hidden">
           <Space className="detail-card" style={{ overflow: 'scroll' }}>
             {relatedShows.length ? relatedShows.map((show) => (
               <div key={show.show.id}>
