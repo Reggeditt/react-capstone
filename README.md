@@ -5,7 +5,7 @@
   
   <br/>
 
-  <h3><b>React-group-Project</b></h3>
+  <h3><b>React-Capstone-Project</b></h3>
 
 </div>
 
@@ -30,27 +30,30 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 React-group-Project <a name="about-project"></a>
+# 📖 React-Capstone-Project <a name="about-project"></a>
 
-**React-group-Project** is a Project which is fetching images through base API  and displaying them on the app pages. User can reserve rockets and mission. User reservation will be displayed in the profile page. 
+**React-Capstone-Project** is a Project which displays a list of continents, their total population, and square area. It allows users to view in detail breakdown of this information by country of each continent. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
-React Redux and API 
-
-### Tech Stack <a name="tech-stack"></a>
+React
+### React & Redux <a name="tech-stack"></a>
 
 ### Key Features <a name="key-features"></a>
 
-- **[React Redux and usage of API ]**
+- **[ Displays continent name, population and land area ]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"> </a>
 
-- [Live Demo](Will be available after final approval)
+- [Live Demo](https://reggeditt.github.io/react-capstone/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 💻 Video Presentation <a name="walk-through-video"></a>
+
+[Click](https://www.loom.com/share/94913ca4b1cf424ca78d47f0a95d21e1?sid=e405b6a8-8ce7-4759-be74-3d211caa33ab) to watch a video presentation on the project
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -71,44 +74,33 @@ Example commands:
 ```
 
 ### Install
-npm install
-
+```
+  npm install
+```
 ### Usage
-user must be able to see the Data fetched through API and must be able to reserve rockets and missions. 
+Use as desired according to the terms of the license.
 
 ### Run tests
-Reserve rockets and missions and must be able to see in the profile section.
-
+```
+  npm test
+```
 ### Deployment
-The Project will be deployed after final approval.
-
+```
+  npm run deploy
+```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Author <a name="authors"></a>
 
-👤 **Dieum Akonkwa**
-
-- GitHub: [dieum512](https://github.com/dieum512)
-- Linkedin: [@dieumakonkwa](https://www.linkedin.com/in/dieumakonkwa/ )
-- Twitter: [@dieumakonkw](https://twitter.com/dieumakonkw)
-
 👤 **Tetteh Kodjo-Sarso**
-
 - GitHub: [@Reggeditt](https://github.com/Reggeditt)
-- Linkedin: [@tetteh-kodjo-sarso](www.linkedin.com/in/tetteh-kodjo-sarso-888989125/ )
-
-👤 **Kelvin irungu{Kel-nana}**
-
-- GitHub: [@Kel-nana](https://github.com/Kel-nana)
-- Linkedin: [@kelvin-irungu](https://www.linkedin.com/in/kelvin-irungu-838923249/)
-- Twitter: [@kelvin-irungu](https://twitter.com/home)
-
+- Linkedin: [@tetteh-kodjo-sarso](www.linkedin.com/in/tksarso/ )
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Functionality of fetching Data from APIs and displaying in UI. Functionality of reservations of rockets and missions will be implemented in the final version. In future we can add more features to enhanc our features**
+- [ ] **Add a search input to allow users to filter and search data easily**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,8 +118,9 @@ If you like this project please consider leaving a review.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank my coding partner's Tetteh Kodjo-Sarso
- and Dieum Akonkwa for there contributions to this project with me. 
+I would like to thank microverse inc for this awesome challeng. Also, my learning partner for all his help and contributions to the completion of the project.
+
+Also, many thanks to [Nelson Sakwa](http://dribbble.com/nelsonbreeza) for the awesome design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
