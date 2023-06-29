@@ -26,7 +26,7 @@ const DetailPage = () => {
   const [cols, setCols] = useState(1);
   const { relatedShows } = useSelector((store) => store.details);
   const back = () => (
-    navigate('/about', { replace: true }, { state: { from: 'detail' } })
+    navigate('/shows', { replace: true }, { state: { from: 'detail' } })
   );
 
   function truncateStringByWords(string, maxWords) {
